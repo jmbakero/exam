@@ -1,0 +1,72 @@
+[
+    {
+        "ticketName": "Fedélzeti menetjegy",
+        "info": [
+            {
+                "title": "Fedélzeti menetjegy",
+                "description": "A fedélzeti menetjegy a vásárlástól számított, de legfeljebb a következő végállomásig használható egyszeri, megszakítás nélküli utazásra."
+            }
+        ],
+        "price": 550
+    },
+    {
+        "ticketName": "60 perces jegy",
+        "info": [
+            {
+                "title": "60 perces jegy",
+                "description": "A 60 perces jegy a vásárlástól számított 60 - azaz hatvan - percig, bármelyik járművön, korlátlan utazásra jogosít."
+            }
+        ],
+        "price": 600
+    },
+    {
+        "ticketName": "24 órás jegy",
+        "info": [
+            {
+                "title": "24 órás jegy",
+                "description": "A 24 órás jegy a vásárlás napját követő naptári nap üzemzárásáig használható fel bármelyik járművön, korlátlan utazásra."
+            }
+        ],
+        "price": 1510
+    },
+    {
+        "ticketName": "Körúti napijegy",
+        "info": [
+            {
+                "title": "Körúti napijegy",
+                "description": "A körúti napijegy a vásárlás időpontjától ugyanazon naptári nap üzemzárásáig használható fel bármelyik járművön, korlátlan utazásra a körúton belül, illetve a körúton kívül eső első megállóhelyig."
+            }
+        ],
+        "price": 720
+    },
+    {
+        "ticketName": "Kiegészítő körúti napijegy",
+        "info": [
+            {
+                "title": "Kiegészítő körúti napijegy",
+                "description": "A kiegészítő körúti napijegy ugyanazon napon megváltott érvényes parkolójeggyel együtt, a vásárlás időpontjától ugyanazon naptári nap üzemzárásáig használható fel bármelyik járművön, korlátlan utazásra a körúton belül, illetve a körúton kívül eső első megállóhelyig."
+            }
+        ],
+        "price": 480
+    },
+    {
+        "ticketName": "72 órás jegy",
+        "info": [
+            {
+                "title": "72 órás jegy",
+                "description": "A 72 órás jegy a vásárlás időpontjától számított 3. - azaz harmadik - naptári nap üzemzárásáig érvényes bármelyik járművön, korlátlan számú utazásra."
+            }
+        ],
+        "price": 2940
+    },
+    {
+        "ticketName": "5/30 napijegy",
+        "info": [
+            {
+                "title": "5/30 napijegy",
+                "description": "Az 5/30 napijegy érvényes az első használattól számított 5 vagy 30 napon belül korlátlan számú utazásra."
+            }
+        ],
+        "price": 5355
+    }
+]

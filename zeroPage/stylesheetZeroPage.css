@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0 0 0;
+}
+
+.attention {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: red;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.gotomain {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: green;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #e7e7e7;
+    display: grid;
+    align-items: center;
+    background: url(FB_IMG_1714547567967.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    background: #7a0404;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 40px;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform .6s ease;
+}
+
+.navbar a:hover::after {
+    transform-origin: left;
+    transform: scale(1);
+}
+
+.main-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.info-container {
+    width: 30%;
+    height: 80%;
+    margin: 0 50px 0 50px;
+    border-radius: 5px;
+    background: #e7e7e7;
+    opacity: 0.9;
+}
+
+.info-container h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.info {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 400px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(122, 4, 4, 0.5);
+}
+
+.info p {
+    margin: 10px 0;
+    text-align: justify;
+    line-height: 1.5;}
+
+.shop-container {
+    width: 30%;
+    height: 93%;
+    margin: 0 50px 0 50px;
+    border-radius: 5px;
+    background: #e7e7e7;
+    opacity: 0.9;
+}
+
+.shop-container h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.products {
+    margin: auto;
+    padding: 5px;
+    width: 80%;
+    height: 550px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(122, 4, 4, 0.5);
+}
+
+.products .fedelzetiMenetjegy {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.products .hatvanPercesJegy {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.products .huszonnegyOrasJegy {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.products .korutiNapijegy {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.products .kiegeszitoKorutiNapijegy {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.products .hetvenketOrasJegy {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.products .otHarmincNapijegy {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.tickets {
+    background-color: #7a0404;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tickets:hover {
+    background-color: #e7e7e7;
+    color: #7a0404;
+    border: 1px solid #7a0404;
+    border-radius: 5px;
+}
+
+.price {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.plus {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.minus {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-container {
+    width: 30%;
+    height: 80%;
+    margin: 0 50px 0 50px;
+    border-radius: 5px;
+    background: #e7e7e7;
+    opacity: 0.9;
+}
+
+.cart-container h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cart {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 400px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(122, 4, 4, 0.5);
+}

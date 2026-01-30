@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="stylesheetServicesPage.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/mainPage/mainPage.html">Főoldal</a>
+        <a href="#">Rólunk</a>
+        <a href="/servicesPage/servicesPage.html">Szolgáltatások</a>
+        <a href="/gallery/gallery.html">Galéria</a>
+        <a href="#">Kapcsolatok</a>
+    </nav>
+    <div class="main-container">
+        <div class="info-container">
+            <h2>Info</h2>
+            <div class="info">
+                <p>Ticketname:<p id="infoName"></p></p>
+                <p>Ticket description:<p id="infoDescription">Some information about the ticket.</p></p>
+            </div>
+        </div>
+        <div class="shop-container">
+            <h2>Shop</h2>
+            <div class="ticket-container">
+                <div class="products">
+                    <div class="fedelzetiMenetjegy">
+                        <button id="Fedélzeti menetjegy" class="tickets" onclick="info(this.id)">Fedélzeti menetjegy</button>
+                        <p class="price">550 Ft</p>
+                        <button id="Fedélzeti menetjegy" class="plus" onclick="addToCart(this)">+</button>
+                        <button id="Fedélzeti menetjegy" class="minus" onclick="removeFromCart(this)">-</button>
+                    </div>
+                    <div class="hatvanPercesJegy">
+                        <button id="60 perces jegy" class="tickets" onclick="info(this.id)">60 perces jegy</button>
+                        <p class="price">600 Ft</p>
+                        <button id="60 perces jegy" class="plus" onclick="addToCart(this)">+</button>
+                        <button id="60 perces jegy" class="minus" onclick="removeFromCart(this)">-</button>
+                    </div>
+                    <div class="huszonnegyOrasJegy">
+                        <button id="24 órás jegy" class="tickets" onclick="info(this.id)">24 órás jegy</button>
+                        <p class="price">1510 Ft</p>
+                        <button id="24 órás jegy" class="plus" onclick="addToCart(this)">+</button>
+                        <button id="24 órás jegy" class="minus" onclick="removeFromCart(this)">-</button>
+                    </div>
+                    <div class="korutiNapijegy">
+                        <button id="Körúti napijegy" class="tickets" onclick="info(this.id)">Körúti napijegy</button>
+                        <p class="price">720 Ft</p>
+                        <button id="Körúti napijegy" class="plus" onclick="addToCart(this)">+</button>
+                        <button id="Körúti napijegy" class="minus" onclick="removeFromCart(this)">-</button>
+                    </div>
+                    <div class="kiegeszitoKorutiNapijegy">
+                        <button id="Kiegészítő körúti napijegy" class="tickets" onclick="info(this.id)">Kiegészítő körúti napijegy</button>
+                        <p class="price">480 Ft</p>
+                        <button id="Kiegészítő körúti napijegy" class="plus" onclick="addToCart(this)">+</button>
+                        <button id="Kiegészítő körúti napijegy" class="minus" onclick="removeFromCart(this)">-</button>
+                    </div>
+                    <div class="hetvenketOrasJegy">
+                        <button id="72 órás jegy" class="tickets" onclick="info(this.id)">72 órás jegy</button>
+                        <p class="price">2940 Ft</p>
+                        <button id="72 órás jegy" class="plus" onclick="addToCart(this)">+</button>
+                        <button id="72 órás jegy" class="minus" onclick="removeFromCart(this)">-</button>
+                    </div>
+                    <div class="otHarmincNapijegy">
+                        <button id="5/30 napijegy" class="tickets" onclick="info(this.id)">5/30 napijegy</button>
+                        <p class="price">5355 Ft</p>
+                        <button id="5/30 napijegy" class="plus" onclick="addToCart(this)">+</button>
+                        <button id="5/30 napijegy" class="minus" onclick="removeFromCart(this)">-</button>
+                    </div>
+                </div>
+            </div>
+            <p style="margin: 5px;font-style: italic; font-size: 14px;">Információért kattintson a jegyre!</p>
+        </div>
+        <div class="cart-container">
+            <h2>Cart</h2>
+            <div class="cart">
+                <p>Cart content goes here:<p id="cartContent"></p></p>
+                <p>Total price: <span id="totalPrice">0 Ft</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
