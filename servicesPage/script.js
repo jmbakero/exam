@@ -66,11 +66,21 @@ function removeFromCart(id) {
     for (let i = 0; i < tickets.length; i++) {
         if (tickets[i].ticketName === ghi) {
             let cartContentText = tickets[i].ticketName + " - " + tickets[i].price;
-            document.getElementById("cartContent").innerHTML = document.getElementById("cartContent").innerHTML.replace(cartContentText + "Ft" + "<br>", "");
+            updateCartInfo(cartContentText + "Ft" + "<br>");
             totalPrice -= tickets[i].price;
             document.getElementById("totalPrice").innerHTML = totalPrice + " Ft";
-            cart = cart.filter(item => item !== tickets[i].ticketName);
+            const lastOccurrenceIndex = cart.lastIndexOf(tickets[i].ticketName);
+            cart = (lastOccurrenceIndex === -1) ? cart : cart.toSpliced(lastOccurrenceIndex, 1);
             console.log(cart);
         }
+    }
+}
+
+function updateCartInfo(ticketLine) {
+    let cartInfoEl = document.getElementById("cartContent");
+    let cartInfo = cartInfoEl.innerHTML;
+    const index = cartInfo.lastIndexOf(ticketLine);
+    if (index !== -1) {
+        cartInfoEl.innerHTML = cartInfo.slice(0, index) + cartInfo.slice(index + ticketLine.length);
     }
 }
