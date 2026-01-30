@@ -1,18 +1,3 @@
-class Ticket {
-    constructor(ticketName, info, price) {
-        this.name = ticketName;
-        this.info = info;
-        this.price = price;
-    }
-}
-
-class Info {
-    constructor(title, description) {
-        this.title = title;
-        this.description = description;
-    }
-}
-
 let tickets = [];
 
 async function loadTickets() {
@@ -29,7 +14,6 @@ async function loadTickets() {
 loadTickets();
 
 function info(id) {
-    let abc = id;
     console.log(id);
 
     for (let i = 0; i < tickets.length; i++) {
